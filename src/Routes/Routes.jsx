@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/products/:id',
-          element:<ProductDetail/>,
+          element:<PrivateRoute><ProductDetail/></PrivateRoute>,
           loader: ({params}) =>fetch(`https://kidszone-server.vercel.app/products/${params.id}`)
         },
         {
