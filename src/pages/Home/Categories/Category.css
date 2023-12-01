@@ -1,0 +1,15 @@
+.cd {
+    perspective: 1000px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cd:hover {
+    transform: rotateY(180deg);
+}
+.cd-link .cd-title{
+    transition: transform 0.5s ease;
+    color: #ff487a;
+}
+.cd-link:hover .cd-title {
+    color: #11d6e1;
+}

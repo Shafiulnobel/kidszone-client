@@ -1,0 +1,32 @@
+.foot{
+    background-image:
+        url(../../../assets/footer_image.png);
+     /* lt ie8 */
+
+  background-position: center bottom;
+  
+  /* scale bg image proportionately */
+  background-size: cover;
+
+    /* background-repeat: no-repeat; */
+    overflow: hidden;
+}
+.foot-img{
+     margin-top: -200px;
+     animation: translate 5s linear infinite;
+     
+}
+.main{
+    z-index:1;
+}
+@keyframes translate {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

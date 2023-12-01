@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.pop{
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  display:grid;
+  /* height:100vh; */
+  place-items:center
+}
+.crd-wrapper {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.crd {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.crd-image {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.crd-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    visibility: hidden;
+}
+
+.crd:hover .crd-image {
+    opacity: 0.7;
+}
+
+.crd:hover .crd-buttons {
+    visibility: visible;
+}
+.menu a.active {
+    background-color: black;
+    color: white; /* Adjust text color as needed */
+}
